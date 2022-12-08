@@ -36,7 +36,6 @@ h1 {
 
 /* nav bar */
 nav {
-    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
@@ -67,17 +66,20 @@ nav h1:visited {
   
 /* frontpage */
 
-
-#bio {
-	width: 85%;
+.bio {
+	width: 76%;
 	margin: auto;
 	text-align: center;
-	background-color: var(--lt-pink);
-	border: 10px solid var(--lt-pink);
+	background-color: var(--lt-blue);
+	border: 20px solid var(--lt-blue);
+}
+
+#name {
+	color: var(--md-pink);
 }
 
 .front {
-	width: 90%;
+	width: 80%;
 	margin: auto;
 	text-align: center;
 	background-color: var(--md-blue);
@@ -101,7 +103,7 @@ nav h1:visited {
 }
 
 .front td:hover {
-	background-color: var(--lt-pink);
+	background-color: var(--lighter-blue);
 }
 
 .front img {
@@ -115,7 +117,7 @@ nav h1:visited {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0.7;
+        opacity: 1;
 		z-index: -5;
 }
 
@@ -136,15 +138,20 @@ nav h1:visited {
 }
 
 .main img {
-	height: 600px;
+	height: 550px;
 	border: 20px solid white;
 }
 
-#caption {
+#caption, #description {
 	width: 65%;
 	margin: auto;
 	background-color: var(--lighter-blue);
 	border: 15px solid var(--lighter-blue);
+}
+
+#caption2 {
+	color: var(--grey);
+	font-size: 13px;
 }
 
 .thumbnails {

@@ -26,3 +26,11 @@ function MM_showHideLayers() { //v9.0
     with (document) if (getElementById && ((obj=getElementById(objId))!=null))
       with (obj) innerHTML = unescape(newText);
   }
+
+  function updateURL1() {
+    document.getElementById("caption").href = "https://www.youtube.com/watch?v=Jx_pdBmf2CU";
+  }
+
+ function updateURL2() {
+  document.getElementById("caption").href = "https://drive.google.com/file/d/1uK8ABwFzT2C6JsXKBH8Z84MAbpqcaxB3/view?usp=share_link";
+ }

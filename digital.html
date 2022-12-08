@@ -21,7 +21,13 @@
 	<!-- main image -->
 	<section class="main">
 		<img src="images/vr.jpg"  alt="" id="dig_main"/>
-		<p id="caption"> <a href = "https://www.youtube.com/watch?v=Jx_pdBmf2CU">virtual reality </a> // unity, c# // 2021 </p>
+		<br> <br>
+		<div id="description">
+			<a id="caption" href = "https://www.youtube.com/watch?v=Jx_pdBmf2CU">virtual reality // unity, c# // 2021</a> 
+		<br> 
+			<p id="caption2">
+		VR simulation of the 1812 Fire of Moscow, in which the user experiences the event firsthand via Oculus headset.</p>
+		</div>
 	</section>
 	
 	<!-- thumbnails -->
@@ -29,13 +35,17 @@
 	  <tbody>
 		<tr>
 			<td scope="col"><img src="images/vr.jpg" alt="" id="dig1" 		
-			onClick="MM_swapImage('dig_main','','images/vr.jpg',1); 
-			MM_setTextOfLayer('caption','','virtual reality // unity, c# // 2021') "> 
-			<br> &nbsp;</td>
-
-			<td scope="col"><img src="images/vr.jpg" alt="" id="dig2" 		
 				onClick="MM_swapImage('dig_main','','images/vr.jpg',1); 
-				MM_setTextOfLayer('caption','','virtual reality // unity, c# // 2021') "> 
+				MM_setTextOfLayer('caption','','virtual reality // unity, c# // 2021');
+				MM_setTextOfLayer('caption2','','VR simulation of the 1812 Fire of Moscow, in which the user experiences the event firsthand via Oculus headset.');
+				updateURL1(); "> 
+				<br> &nbsp;</td>
+
+			<td scope="col"><img src="images/catalog.png" alt="" id="dig2" 		
+				onClick="MM_swapImage('dig_main','','images/catalog.png',1); 
+				MM_setTextOfLayer('caption','','graphic design // adobe illustrator, indesign // 2022');
+				MM_setTextOfLayer('caption2','','Catalog featuring an artist statement and some of my favorite artworks.')
+				updateURL2()">
 				<br> &nbsp;</td>
 			
 			
