@@ -1,0 +1,141 @@
+/* variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+	--margin: 3rem;
+	--padding: 0.6rem;
+	
+	--lighter-blue: #edf9ff;
+    --lt-blue: #c4ebff;
+    --md-blue: #00a2ff;
+	--grey: #9f9f9f;
+	--lt-pink: #f9edff;
+	--md-pink: #f582f3;
+  }
+
+body {
+	font-family: "Montserrat", sans serf;
+	background-color: var(--lt-blue);
+}
+
+h1 {
+	color:var(--md-blue);
+}
+
+
+a:hover {
+    color: var(--md-pink);
+  }
+
+p {
+	text-align: center;
+}
+
+/* nav bar */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+	height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: white;
+	margin: var(--margin);
+  }
+
+nav h1 {
+		color: var(--md-blue);
+	}
+
+nav a:hover {
+		color: var(--md-pink);
+	}
+
+nav h1:visited {
+		color: var(--md-blue);
+	}
+  
+/* frontpage */
+
+.front {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	background-color: var(--lt-blue);
+
+}
+.front a, a:visited {
+		color: var(--temp);
+	}
+
+.front a:hover {
+		color: var(--md-pink)
+	}
+
+.front th {
+	width: 33%;
+	background-color: black;
+}
+
+.front td {
+	border-width: thick;
+	border-color: var(--lt-blue);
+	background-color: white;
+	width: 33%;
+}
+
+.front td:hover {
+	background-color: var(--lt-pink);
+}
+
+.front img {
+		padding: var(--padding);
+		width: 80%;
+	}
+
+/* art pages */
+.main {
+	margin: auto;
+	height: 80%;
+	display: block;
+	text-align: center;
+}
+
+.main a, a:visited {
+	color: var(--temp);
+}
+
+.main a:hover {
+	color: var(--md-pink)
+}
+
+.main img {
+	height: 600px;
+}
+
+.thumbnails {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	background-color: var(--lt-blue);
+}
+
+.thumbnails td {
+	background-color: white;
+	width: 20%;
+}
+
+.thumbnails td:hover {
+	background-color: var(--lighter-blue);
+}
+
+.thumbnails img {
+	padding: var(--padding);
+	height: 100px;
+}
+
+
