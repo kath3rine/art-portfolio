@@ -34,6 +34,10 @@ h1 {
 	text-align: center;
 }
 
+*, * td, * img {
+	border-radius: 12px;
+}
+
 /* nav bar */
 nav {
     top: 0;
@@ -56,7 +60,7 @@ nav a {
 	color: black;
 }
 
-nav a:hover {
+nav a:hover, .main a:hover, #name:hover, .front a:hover {
 		color: var(--md-pink);
 	}
 
@@ -74,9 +78,6 @@ nav h1:visited {
 	border: 20px solid var(--lt-blue);
 }
 
-#name {
-	color: var(--md-pink);
-}
 
 .front {
 	width: 80%;
@@ -85,10 +86,6 @@ nav h1:visited {
 	background-color: var(--md-blue);
 	z-index: 10;
 }
-
-.front a:hover {
-		color: var(--md-pink)
-	}
 
 .front th {
 	width: 33%;
@@ -140,6 +137,7 @@ nav h1:visited {
 .main img {
 	height: 550px;
 	border: 20px solid white;
+	border-radius: 10px;
 }
 
 #caption, #description {
