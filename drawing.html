@@ -2,66 +2,49 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Katherine Li // Drawings</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-	<link rel="stylesheet" href="style.css" />
+	<title>Katherine Li // Art Portfolio </title>
+	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/art.css" />
   <script src="script.js" type="text/javascript"></script>
+
 </head>
-	
-<body onLoad="MM_preloadImages('images/draw_face.png')">
-	
-<!-- nav bar -->
-<nav>
-		 <h1><li> <a href = "index.html"> Katherine Li // Art Portfolio </a></li></h1>
-         <li><a href = "drawing.html">Drawing</a></li>
-		 <li><a href = "painting.html">Painting</a></li>
-         <li><a href = "digital.html">Digital Art</a></li>
-    </nav>
-	
-<!-- main image (changes) -->
-<section class="main">
-	<img src="images/draw_face.jpg"  alt="" id="draw_main"/>
-  <br> <br>
-	<p id="caption"> colored pencil // 9 x 12 // 2019 </p>
-</section>
+<body>
+    <!-- nav bar -->
+    <div class="navbar">
+        <a href="index.html" id="home-button"> home </a>
+        <a href="drawing.html"> drawing </a>
+        <a href="painting.html"> painting </a>
+        <a href="digital.html"> digital </a>
+    </div>
+    <br>
 
+    <h1 style="position: relative"> DRAWING </h1>
 
-<!-- artwork thumbnails (click) -->
-<table class="thumbnails" cellspacing="15">
-  <tbody>
-    <tr>
-		<td scope="col"><img src="images/draw_face.jpg" alt="" id="draw1" 		
-    onClick="MM_swapImage('draw_main','','images/draw_face.jpg',1); 
-		MM_setTextOfLayer('caption','','colored pencil // 9 x 12 // 2020')">
-    <br> &nbsp;</td>
-		
-		<td scope="col"><img src="images/draw_eye.JPG" alt="" id="draw2" 		
-    onClick="MM_swapImage('draw_main','','images/draw_eye.JPG',1); 
-		MM_setTextOfLayer('caption','','colored pencil // 8 x 8 // 2019') "> 
-    <br> &nbsp;</td>
-		
-		<td scope="col"><img src="images/draw_medal.JPG" alt="" id="draw3" 		
-    onClick="MM_swapImage('draw_main','','images/draw_medal.JPG',1); 
-		MM_setTextOfLayer('caption','','colored pencil // 8 x 11 // 2019') "> 
-    <br> &nbsp;</td>
-		
-		<td scope="col"><img src="images/draw_foot.jpg" alt="" id="draw4" 	
-    onClick="MM_swapImage('draw_main','','images/draw_foot.jpg',1); 
-		MM_setTextOfLayer('caption','','charcoal // 11 x 17 // 2020') "> 
-    <br> &nbsp;</td>
-		
-	  <td scope="col"><img src="images/draw_animals.JPG" alt="" id="draw5" 		
-      onClick="MM_swapImage('draw_main','','images/draw_animals.JPG',1); 
-      MM_setTextOfLayer('caption','','colored pencil // 5.5 x 8.5 // 2021')"> 
-      <br> &nbsp;</td> 
+    <div class="main">
+        <img src="/images/draw_face.jpg" id="draw_main">
+        <p class="caption" id="draw_caption" onmouseover="captionOn('draw_caption', 'draw_main')"
+        onmouseout="captionOff('draw_caption', 'draw_main')"> 
+        colored pencil <br> 9 x 12 | 2020 </p>
+    </div>
 
-    <td scope="col"><img src="images/draw_rainbow.jpg" alt="" id="draw6" 		
-      onClick="MM_swapImage('draw_main','','images/draw_rainbow.jpg',1); 
-      MM_setTextOfLayer('caption','','colored pencil // 8 x 11 // 2019')"> 
-      <br> &nbsp;</td> 
-	</tr>
-  </tbody>
-</table>
+    <div class="thumbnails">
+        <img src="/images/draw_face.jpg" onclick="swapImg('draw_main', 'images/draw_face.jpg'); 
+        swapText('draw_caption', 'colored pencil <br> 9 x 12 | 2020')">
 
+        <img src="/images/draw_medal.jpg" onclick="swapImg('draw_main', 'images/draw_medal.jpg'); 
+        swapText('draw_caption', 'colored pencil <br> 8 x 10 | 2019')">
+
+        <img src="/images/draw_eye.jpg" onclick="swapImg('draw_main', 'images/draw_eye.jpg'); 
+        swapText('draw_caption', 'colored pencil <br> 8 x 8 | 2019')">
+
+        <img src="/images/draw_foot.jpg" onclick="swapImg('draw_main', 'images/draw_foot.jpg'); 
+        swapText('draw_caption', 'charcoal <br> 11 x 17 | 2019')">
+
+        <img src="/images/draw_animals.jpg" onclick="swapImg('draw_main', 'images/draw_animals.jpg'); 
+        swapText('draw_caption', 'colored pencil <br> 8.5 x 5.5 | 2020')" 
+        style="object-position: right">
+
+        <img src="/images/draw_rainbow.jpg" onclick="swapImg('draw_main', 'images/draw_rainbow.jpg'); 
+        swapText('draw_caption', 'colored pencil | 8 x 10 | 2019')">
+    </div>
 </body>
-</html>

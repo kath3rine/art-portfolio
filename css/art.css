@@ -1,0 +1,57 @@
+/* main image */
+
+.main img {
+    height: 60vh;
+    object-fit: contain;
+    opacity: 1;
+    border: white solid 5px;
+}
+
+.main a {
+    color: var(--col3);
+}
+
+.main a:hover {
+    color: var(--col4);
+}
+
+.main h1 {
+    position: relative;
+}
+
+.main .caption{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    margin: auto;
+    color: transparent;
+    padding: 150px;
+}
+
+#dig_link {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    right: 45%;
+}
+
+/* thumbnails */
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 60vw;
+    justify-content: space-around;
+}
+
+.thumbnails img {
+    height: 12vh;
+    width: 12vh;
+    object-fit: cover;
+    border: white solid 5px;
+    margin: 5px auto 5px auto;
+}
+.thumbnails img:hover {
+    opacity: 0.5;
+}
+
