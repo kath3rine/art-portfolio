@@ -17,13 +17,14 @@
 
 .main h1 {
     position: relative;
+    top: 10vh;
 }
 
 .main .caption{
     position: absolute;
     top: 20%;
-    left: 20%;
-    right: 20%;
+    left: 25%;
+    right: 25%;
     margin: auto;
     color: transparent;
     padding: 150px;

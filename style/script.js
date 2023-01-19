@@ -12,7 +12,7 @@ function updateURL(url, source) {
 
 function captionOn(text, image) {
     document.getElementById(text).style.color = 'var(--col4)';
-    document.getElementById(image).style.opacity = 0.15;
+    document.getElementById(image).style.opacity = 0.2;
 }
 
 function captionOff(text, image) {
