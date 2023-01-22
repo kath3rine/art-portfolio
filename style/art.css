@@ -1,11 +1,15 @@
 /* main image */
+.page-title {
+    position: relative;
+}
 
 .main img {
-    height: 60vh;
     object-fit: contain;
     opacity: 1;
     border: white solid 5px;
 }
+
+
 
 .main a {
     color: var(--col3);
@@ -15,44 +19,62 @@
     color: var(--col4);
 }
 
-.main h1 {
-    position: relative;
-    top: 10vh;
-}
-
-.main .caption{
+.caption{
     position: absolute;
-    top: 20%;
-    left: 25%;
-    right: 25%;
-    margin: auto;
+    top: 10vh;
+    left: 10vw;
+    right: 10vw;
     color: transparent;
-    padding: 150px;
+    padding: 20vw;
 }
 
 #dig_link {
     position: absolute;
-    top: 60%;
-    left: 45%;
-    right: 45%;
+    top: 70vh;
+    right: 45vw;
+    left: 45vw;
 }
 
 /* thumbnails */
 .thumbnails {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    width: 60vw;
-    justify-content: space-around;
+    left: 40%;
+    right: 40%;
+    justify-content: center;
+    gap: 10px;
 }
 
 .thumbnails img {
-    height: 12vh;
-    width: 12vh;
+    height: 10vh;
+    width: 10vh;
     object-fit: cover;
     border: white solid 5px;
-    margin: 5px auto 5px auto;
+    margin: auto;
 }
 .thumbnails img:hover {
     opacity: 0.5;
 }
 
+/* desktop */
+@media only screen and (min-width: 800px) {
+    .main img {
+        height: 65vh;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+    .main img {
+        width: 90vw;
+    }
+
+    .caption {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #dig_link {
+        top: 50vh;
+    }
+}

@@ -9,16 +9,23 @@
 		z-index: -5;
 }
 
+/* title */
 .title {
-    top: 10vh;
+    margin: 2% 10% 0px 10%;
 }
+
+.title span {
+    position: relative;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
 
 /* bio */
 .bio {
     width: 79vw;
-    margin: 2vh auto 2vh auto;
+    margin: auto;
     background-color: var(--col1);
-    top: 10vh;
     position: relative;
 }
 
@@ -41,7 +48,6 @@
 	margin: auto;
 	background-color: transparent;
 	z-index: 10;
-    top: 10vh;
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
@@ -75,4 +81,11 @@
 
 .front-section h2 {
     margin-bottom: 5vh;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+    .front {
+        display: block;
+    }
 }
